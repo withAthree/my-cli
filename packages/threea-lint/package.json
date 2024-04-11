@@ -17,6 +17,7 @@
     "build": "rm -rf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "coverage": "nyc jest --silent --forceExit",
+    "test": "npm run build && jest",
     "prepublishOnly": "npm run test"
   },
   "devDependencies": {
