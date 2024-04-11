@@ -1,0 +1,17 @@
+{
+  "name": "threea-markdownlint-config",
+  "version": "0.0.0",
+  "description": "个人文档规范",
+  "author": "withAthree",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.json",
+  "peerDependencies": {
+    "markdownlint": "^0.34.0"
+  },
+  "keywords": [
+    "threea",
+    "markdown",
+    "lint"
+  ]
+}

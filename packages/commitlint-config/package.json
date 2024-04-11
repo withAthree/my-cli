@@ -1,0 +1,17 @@
+{
+  "name": "threea-commitlint-config",
+  "version": "0.0.0",
+  "description": "个人 Git 规范",
+  "author": "withAthree",
+  "homepage": "",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^7.0.2"
+  },
+  "keywords": [
+    "threea",
+    "commit",
+    "lint"
+  ]
+}
