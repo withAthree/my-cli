@@ -14,7 +14,7 @@
   "bin": "./lib/cli.js",
   "scripts": {
     "dev": "npm run copyfiles && tsc -w",
-    "build": "rm -rf lib && npm run copyfiles && tsc",
+    "build": "rimraf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "coverage": "nyc jest --silent --forceExit",
     "test": "npm run build && jest",
