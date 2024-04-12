@@ -38,15 +38,15 @@ npm install threea-lint -g
 
 - 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [threea-eslint-config](https://www.npmjs.com/package/threea-eslint-config)、[threea-stylelint-config](https://www.npmjs.com/package/threea-stylelint-config)、[threea-commitlint-config](https://www.npmjs.com/package/threea-commitlint-config)、[threea-markdownlint-config](https://www.npmjs.com/package/threea-markdownlint-config) 等
 - 写入各种配置文件，包括：
-    - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `threea-eslint-config`）及黑名单文件
-    - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `threea-stylelint-config`）及黑名单文件
-    - `commitlint.config.js`：commitlint 配置（继承 `threea-commitlint-config`）
-    - `.markdownlint.json`、`.markdownlintignore`：`markdownlint` 配置及黑名单文件
-    - `.prettierrc.js`：符合规范的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
-    - `.editorconfig`：符合规范的 [editorconfig](https://editorconfig.org/)
-    - `.vscode/extensions.json`：写入规范相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括 `ESLint`、`stylelint`、`markdownlint`、`prettier` 等
-    - `.vscode/settings.json`：写入规范相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 `ESLint` 和 `stylelint` 插件的 `validate` 及**保存时自动运行 fix**，如果选择使用 `Prettier`，会同时将 `prettier-vscode` 插件设置为各前端语言的 defaultFormatter，并配置**保存时自动格式化**
-    - `threea-lint.config.js`threea-lint 包的一些配置，如启用的功能等
+  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `threea-eslint-config`）及黑名单文件
+  - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `threea-stylelint-config`）及黑名单文件
+  - `commitlint.config.js`：commitlint 配置（继承 `threea-commitlint-config`）
+  - `.markdownlint.json`、`.markdownlintignore`：`markdownlint` 配置及黑名单文件
+  - `.prettierrc.js`：符合规范的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
+  - `.editorconfig`：符合规范的 [editorconfig](https://editorconfig.org/)
+  - `.vscode/extensions.json`：写入规范相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括 `ESLint`、`stylelint`、`markdownlint`、`prettier` 等
+  - `.vscode/settings.json`：写入规范相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 `ESLint` 和 `stylelint` 插件的 `validate` 及**保存时自动运行 fix**，如果选择使用 `Prettier`，会同时将 `prettier-vscode` 插件设置为各前端语言的 defaultFormatter，并配置**保存时自动格式化**
+  - `threea-lint.config.js`threea-lint 包的一些配置，如启用的功能等
 - 配置 git commit 卡口：使用 [husky](https://www.npmjs.com/package/husky) 设置代码提交卡口，在 git commit 时会运行 `threea-lint commit-file-scan` 和 `threea-lint commit-msg-scan` 分别对提交文件和提交信息进行规范检查。`threea-lint commit-file-scan` 默认仅对 error 问题卡口，如果你想对 warn 问题也卡口，可以增加 `--strict` 参数以开启严格模式
 
 > 注 1：如果项目已经配置过 ESLint、stylelint 等 Linter，执行 `threea-lint init` 将会提示存在冲突的依赖和配置，并在得到确认后进行覆盖：

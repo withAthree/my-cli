@@ -4,9 +4,6 @@ categories:
     - 工程规范
 tags:
     - 工程规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
 ---
 
 # Git 规范
