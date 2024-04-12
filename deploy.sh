@@ -3,9 +3,9 @@
 # 抛出信息
 set -e
 
-push_addr=$(git rempte get-url --push origin)
+push_addr=$(git remote get-url --push origin)
 commit_info=$(git describe --all --always --long)
-dist_path=$(docs\.vuepress\dist)
+dist_path=$(docs/.vuepress/dist)
 push_branch=gh-pages
 
 npm run docs:build #生成静态资源站点
