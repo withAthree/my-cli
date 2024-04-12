@@ -4,7 +4,7 @@ import viteBundler from "@vuepress/bundler-vite";
 import {searchPlugin} from "@vuepress/plugin-search";
 
 export default defineUserConfig({
-    base: '/threea-doc/',
+    base: '/my-cli/',
     bundler: viteBundler(),
     locales: {
         '/': {
