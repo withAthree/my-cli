@@ -49,14 +49,11 @@ export default defineUserConfig({
             },
         ],
         sidebar: 'auto',
-        searchMaxSuggestions: 10,
         docsDir: 'docs',
     }),
     plugins: [
-        'vuepress-plugin-smooth-scroll',
         searchPlugin({
             maxSuggestions: 10
-        })
+        }),
     ],
-    extraWatchFiles: ['.vuepress/config.ts'],
 })
